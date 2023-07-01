@@ -1,21 +1,31 @@
+import React from 'react';
+import {Link} from 'react-router-dom';
 function Navbar() {
     return (
-        <div className='navbar'>
+      <header>
+      <nav className='navbar'>
         <div className='logo'>
-          {/*<img src={logo} className="App-logo" alt="logo" />*/}
+            {/*<img src={logo} className="App-logo" alt="logo" />*/}
         </div>
+
         <div className='list'>
           <ul>
-            <li><a href="/#">HOME</a></li>
-            <li><a href="/#">MENU</a></li>
-            <li><a href="/#">ABOUT</a></li>
-            <li><a href="/#">CONTACT</a></li>
+            <Link to="/">Home</Link>
+            <Link to="/menu">Menu</Link>
+            <li><a href="#aboutId">ABOUT</a></li>
+            <li><a href="/#contactId">CONTACT</a></li>
           </ul>
         </div>
 
-        <div className='sign_or_register'></div>
+        <div className='sign_or_register'>
+          <ul>
+            <li><Link to="/signuppage">SignUp</Link></li>
+            <li><Link to="/register">Register</Link></li>
+          </ul>
+        </div>
         <div className='cart'></div>
-      </div>
+      </nav>
+    </header>
     );
 }
 

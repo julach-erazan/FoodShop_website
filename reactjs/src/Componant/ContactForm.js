@@ -1,6 +1,7 @@
+import React from "react";
 function ContactForm() {
     return (
-        <div>
+        <div className='contact'>
             <h1>CONTACT</h1>
 
             <form action="https://formsubmit.co/017d60356378d6bb1b16323985f505fd" method="POST">

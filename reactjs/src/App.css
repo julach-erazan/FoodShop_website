@@ -1,42 +1,125 @@
-/*.App {
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.container{
+  width: 100vw;
+}
+
+/*Navbar*/
+.navbar{
+  width: 100%;
+  height: 60px;
+  background-color: rgb(78, 76, 76);
+  display: flex;
+  align-items: center;
+}
+
+.list ul{
+  display: flex;
+}
+
+.list ul li{
+  list-style: none;
+}
+
+.sign_or_register ul{
+  display: flex;
+}
+
+.sign_or_register ul li{
+  list-style: none;
+}
+/*End Navbar*/
+
+/*Daily Adz*/
+.daily_adz{
+  width: 100%;
+}
+
+p.sliderimg{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.daily_adz p{
+  width: 98.75%;
+  height: 600px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.daily_adz img{
+  width: 100%;
+  height: 600px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.alice-carousel__prev-btn-wrapper{
+  display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.alice-carousel__next-btn-wrapper{
+  display: none;
+}
+/*End Daily Adz*/
+
+.copyright_text{
+  display: flex;
+}
+
+/*PromoAdz*/
+.promo_adz{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.promoContainer{
+  width: 100%;
+  padding: 0 20px 0 20px;
+}
+.promoContainer h2{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.promo_adz .promo_img{
+  min-width: 200px;
+  width: 100%;
+  height: 400px;
+  border-radius: 12px;
+}
+
+.promo1{
+  width: 350px;
+  height: 400px;
+}
+
+.promo2{
+  width: 350px;
+  height: 400px;
+}
+
+.promo3{
+  width: 350px;
+  height: 400px;
+}
+/*End PromoAdz*/
+
+.aboutDiv{
+  width: 98.75%;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}*/
-
-.copyright_text{
-  display: flex;
+.contact{
+  width: 98.75%;
+  height: 1000px;
+  background-color: rgb(139, 233, 233);
 }
